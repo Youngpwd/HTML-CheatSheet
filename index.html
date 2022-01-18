@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CheatSheet</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@465&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#html-tags">HTML Tags</a></li>
+        <li><a href="#semantic-tags">Semantic HTML Tags</a></li>
+        <li><a id="hidden" href="#css-properties">CSS Properties</a></li>
+        <!--hidden until more is added later-->
+      </ul>
+    </nav>
+    <header>
+      <h1>HTML CheatSheet</h1>
+    </header>
+    <main>
+      <section id="html-tags">
+        <h2>HTML Tags</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="theader">Tags</th>
+              <th class="theader">Description</th>
+              <th class="theader">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;!DOCTYPE html&gt;</td>
+              <td>
+                All HTML documents must start with a document type declaration
+              </td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>&lt;html&gt;&lt;/html&gt;</td>
+              <td>Required for HTML documents</td>
+              <td>
+                <img class="html-img" src="./snapshots/html.PNG" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;body&gt;&lt;/body&gt;</td>
+              <td>
+                The body element contains all the contents of an HTML document,
+                such as headings, paragraphs, images, hyperlinks, tables, lists,
+                etc.
+              </td>
+              <td>
+                <img src="./snapshots/body.PNG" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;h1&gt;&lt;/h1&gt; to &lt;h6&gt;&lt;/h6&gt;</td>
+              <td>
+                Headings from most important to least important. Good practice
+                is to never jump multiple headings at a time
+              </td>
+              <td>
+                <img class="h-img" src="./snapshots/h1-h6.PNG" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;head&gt;&lt;/head&gt;</td>
+              <td>
+                The head element contains general information about an HTML page
+                that isn't displayed on the page itself. This information is
+                called metadata and includes things like the title of the HTML
+                document and links to stylesheets.
+              </td>
+              <td><img src="./snapshots/head.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;title&gt;&lt;/title&gt;</td>
+              <td>
+                The title tag defines the title of the document. The title must
+                be text-only, and it is shown in the browser's title bar or in
+                the page's tab
+              </td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;div&gt;&lt;/div&gt;</td>
+              <td>
+                A container element, holds no meaning. Normally its given a
+                class or id attribute to define what the div is.
+              </td>
+              <td><img class="div-img" src="./snapshots/div.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;p&gt;&lt;/p&gt;</td>
+              <td>Used to insert text such as a paragraph</td>
+              <td><img src="./snapshots/p.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;span&gt;&lt;/span&gt;</td>
+              <td>
+                This is a inline container thats purpose is to group specific
+                text. Comes in handy if you want to style a specfic part of
+                text.
+              </td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;strong&gt;&lt;/strong&gt; and &lt;em&gt;&lt;/em&gt;</td>
+              <td>
+                Strong is used to Bold text and em is used to emphasise text.
+              </td>
+              <td><img src="./snapshots/strong-em.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;ol&gt;&lt;/ol&gt;</td>
+              <td>Ordered list, aka numbered.</td>
+              <td><img class="ol-img" src="./snapshots/list.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;ul&gt;&lt;/ul&gt;</td>
+              <td>Unordered list, aka bullet points</td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;li&gt;&lt;/li&gt;</td>
+              <td>The actual list data.</td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;img/&gt;</td>
+              <td>
+                Used to add a image for content. If a image is just for style
+                purposes, use CSS instead. The img tag needs the attributes src
+                to link the image. The alt tag is used incase the img cant load.
+              </td>
+              <td><img src="./snapshots/image.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;video&gt;&lt;/video&gt;</td>
+              <td>
+                Used to add a video for content. Theres several attributes such
+                as controls.
+              </td>
+              <td><img src="./snapshots/video-img.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;a&gt;&lt;/a&gt;</td>
+              <td>
+                The anchor tag is used to link the same page to another
+                document, or to a website using href attribute.
+              </td>
+              <td><img src="./snapshots/anchor.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;!--This is a comment--&gt;</td>
+              <td>
+                Comments are used to help you and others read the code. Anything
+                commented will not display on document, only in source code or
+                DOM.
+              </td>
+              <td><img src="./snapshots/comment.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;table&gt;&lt;/table&gt;</td>
+              <td>The table container</td>
+              <td><img src="./snapshots/table.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;thead&gt;&lt;/thead&gt;</td>
+              <td>Table head is where the table headers go.</td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+              <td>Table body is where the table content goes</td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;tr&gt;&lt;/tr&gt;</td>
+              <td>Table row is the row that well hold the table data.</td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;th&gt;&lt;/th&gt;</td>
+              <td>Table header</td>
+              <td>View image above</td>
+            </tr>
+            <tr>
+              <td>&lt;td&gt;&lt;/td&gt;</td>
+              <td>Table data, or cell</td>
+              <td>View image above</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="semantic-tags">
+        <h2>Semantic HTML Tags</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="theader">Tags</th>
+              <th class="theader">Description</th>
+              <th class="theader">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;nav&gt;&lt;/nav&gt;</td>
+              <td>
+                Nav encapsulates the page's navigational links. It is often
+                placed inside the header or footer
+              </td>
+              <td><img class="nav-img" src="./snapshots/nav.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;header&gt;&lt;/header&gt;</td>
+              <td>
+                Header describes the content at the top of the page, it may
+                include a logo, nav links, searchbar, main title, etc
+              </td>
+              <td>
+                <img class="header-img" src="./snapshots/header.PNG" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;main&gt;&lt;/main&gt;</td>
+              <td>
+                Main encapsulates the main content of a page between the
+                header/navigation and the footer areas
+              </td>
+              <td>
+                <img class="main-img" src="./snapshots/main.PNG" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;section&gt;&lt;/section&gt;</td>
+              <td>
+                Section defines elements in a document, such as chapters,
+                headings, or any other area of the document with the same theme.
+                This is more semantically correct then just using a meaningless
+                &lt;div&gt;container
+              </td>
+              <td>
+                <img class="section-img" src="./snapshots/section.PNG" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;article&gt;&lt;/article&gt;</td>
+              <td>
+                Article holds content that makes sense on its own such as
+                articles, blogs, and comments
+              </td>
+              <td><img src="./snapshots/article.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>&lt;aside&gt;&lt;/aside&gt;</td>
+              <td>
+                The aside element is used to mark additional information that
+                can enhance another element but isn't required in order to
+                understand the main content. Usually, this information would be
+                in a sidebar or a location where it doesn't obstruct the main
+                piece of content
+              </td>
+              <td><img src="./snapshots/aside.PNG" alt="" /></td>
+            </tr>
+            <tr>
+              <td>
+                &lt;figure&gt;&lt;/figure&gt; and
+                &lt;figcaption&gt;&lt;/figcaption&gt;
+              </td>
+              <td>
+                The figure element is used to encapsulate media such as an
+                image, diagram. or code snippet.<br />The figcaption element is
+                used to describe the media encapsulated within the figure
+                element
+              </td>
+              <td><img src="./snapshots/figure-figcaption.PNG" alt="" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
